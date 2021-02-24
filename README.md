@@ -17,21 +17,14 @@
 1. Import data  
 *code/1_data_import/1_import_raw_data.R* Imports data    
 2. Clean data  
-2.1 *code/2_data_cleaning/1_clean_pws_data.R* Loads functions to clean public water system data  
-2.2 *code/2_data_cleaning/2_clean_wq_data.R* Loads functions to clean water quality data  
-2.3 *source("code/2_data_cleaning/3_clean_birth_data.R")* Loads functions to clean births data
-     
-  
-  ## 2.4 Load functions to restrict births to study population
-     source("code/2_data_cleaning/4_inclusion_criteria.R")
-  
-  ## 2.5 Run functions to clean data and restrict to study population
-     source("code/2_data_cleaning/5_run_data_cleaning.R") 
-  
-### 3. Exposure assessment 
-  
-  ## 3.1 Load functions to link births to public water systems based on maternal residence
-     source("code/3_exposure_assessment/1_assign_maternal_PWS.R")
+* *code/2_data_cleaning/1_clean_pws_data.R* Loads functions to clean public water system data  
+* *code/2_data_cleaning/2_clean_wq_data.R* Loads functions to clean water quality data  
+* *code/2_data_cleaning/3_clean_birth_data.R* Loads functions to clean births data
+* *source("code/2_data_cleaning/4_inclusion_criteria.R* Loads functions to restrict births to study population
+* *code/2_data_cleaning/5_run_data_cleaning.R* Runs functions to clean data and restrict to study population
+3. Exposure assessment 
+* *code/3_exposure_assessment/1_assign_maternal_PWS.R* Loads functions to link births to public water systems based on maternal residence
+    
   
   ## 3.2 Load functions to assign gestational water quality based on public water systems
      source("code/3_exposure_assessment/2_assign_gestational_exposure.R")
