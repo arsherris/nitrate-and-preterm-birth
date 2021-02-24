@@ -1,5 +1,6 @@
 # nitrate-and-preterm-birth
-##  Gestational exposure to nitrate in drinking water and preterm birth: \nA retrospective within-mother analysis
+##  Gestational exposure to nitrate in drinking water and preterm birth:
+A retrospective within-mother analysis
 
  Authors: Allison R Sherris, Mike Baiocchi, Scott Fendorf, Steve Luby, Wei Yang, Gary Shaw  
  **Currently in review / draft form**  
