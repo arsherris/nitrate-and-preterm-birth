@@ -10,6 +10,7 @@ A retrospective within-mother analysis
  Estimate tap water during pregnancy for California sibling births, 2000-2011, and define associations between nitrate in drinking water and risk of preterm birth using a within-mother design and conditional logistic regression. Code is customizable to other contaminants and outcomes of interest. 
 
 ## Data sources
+TBD
 
 ## Code
 
@@ -35,42 +36,20 @@ A retrospective within-mother analysis
 * *code/3_exposure_assessment/4_Runs_gestational_exposure.R* Runs functions to assign gestational water quality 
 
 4. Analysis
-    
-   4.1 Loads functions to Runs models and generate results tables
-    
-     Conditional logistic regression models for sibling analysis
-      * *code/4_analysis/1_define_model_fxns/1_clogit_fxns.R*
-  
-     Mixed models for individual-level analysis
-      * *code/4_analysis/1_define_model_fxns/2_glmer_fxns.R*
-    
-     Clean model output to generate results tables
-      * *code/4_analysis/1_define_model_fxns/3_results_table_fxns.R*
-    
-   4.2 Prepare data for analysis
-    
-     Generates sample for individual-level analysis
-      * *code/4_analysis/2_prep_data_for_analysis/1_individual_sample.R*
-  
-     Generates sample for sibling analysis
-      * *code/4_analysis/2_prep_data_for_analysis/2_sibling_sample.R*
-  
-   4.3 Primary analysis
-  
-    * *code/4_analysis/3_primary_analysis/sibling_analysis.R*
-  
-   4.4 Secondary analysis
-    
-     Siblings within the same water system
-      * *code/4_analysis/4_secondary_analysis/1_siblings_same_pws.R*    
-  
-     Individual-level (case-control) analysis
-      * *code/4_analysis/4_secondary_analysis/2_case_control.R*
-  
-     Primary and secondary models with continuous exposure
-      * *code/4_analysis/4_secondary_analysis/3_continuous_exposure.R*
-
-
+4.1 Functions to run models and generate results tables
+* *code/4_analysis/1_define_model_fxns/1_clogit_fxns.R* Functions for conditional logistic regression models for sibling analysis
+* *code/4_analysis/1_define_model_fxns/2_glmer_fxns.R* Functions for mixed models for individual-level analysis
+* *code/4_analysis/1_define_model_fxns/3_results_table_fxns.R* Functions to clean model output and generate results tables
+4.2 Prepare data for analysis
+* *code/4_analysis/2_prep_data_for_analysis/1_individual_sample.R* Generates sample for individual-level analysis
+* *code/4_analysis/2_prep_data_for_analysis/2_sibling_sample.R* Generates sample for sibling analysis
+4.3 Primary analysis
+* *code/4_analysis/3_primary_analysis/sibling_analysis.R* Runs sibling-matched analysis
+4.4 Secondary analyses
+* *code/4_analysis/4_secondary_analysis/1_siblings_same_pws.R* Secondary sibling-matched analysis: siblings within the same water system
+* *code/4_analysis/4_secondary_analysis/2_case_control.R* Secondary individual-level (case-control) analysis
+* *code/4_analysis/4_secondary_analysis/3_continuous_exposure.R* Primary and secondary models with continuous exposure
+      
 Contact Allison Sherris at asherris@stanford.edu for sensitivity analyses code
   
     
