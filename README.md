@@ -1,5 +1,6 @@
 # nitrate-and-preterm-birth
-##  Gestational exposure to nitrate in drinking water and preterm birth:  A retrospective within-mother analysis
+##  Gestational exposure to nitrate in drinking water and preterm birth:  
+A retrospective within-mother analysis
 
  Authors: Allison R Sherris, Mike Baiocchi, Scott Fendorf, Steve Luby, Wei Yang, Gary Shaw  
  **Currently in review / draft form**  
@@ -15,12 +16,12 @@
 *code/0_config.R* loads libraries and universal objects and functions
 
 1. Import data  
-*code/1_data_import/1_import_raw_data.R* Imports data    
+* *code/1_data_import/1_import_raw_data.R* Imports data    
 2. Clean data  
 * *code/2_data_cleaning/1_clean_pws_data.R* Loads functions to clean public water system data  
 * *code/2_data_cleaning/2_clean_wq_data.R* Loads functions to clean water quality data  
 * *code/2_data_cleaning/3_clean_birth_data.R* Loads functions to clean births data
-* *source("code/2_data_cleaning/4_inclusion_criteria.R* Loads functions to restrict births to study population
+* *code/2_data_cleaning/4_inclusion_criteria.R* Loads functions to restrict births to study population
 * *code/2_data_cleaning/5_run_data_cleaning.R* Runs functions to clean data and restrict to study population
 3. Exposure assessment 
 * *code/3_exposure_assessment/1_assign_maternal_PWS.R* Loads functions to link births to public water systems based on maternal residence
