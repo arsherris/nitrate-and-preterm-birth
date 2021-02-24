@@ -14,6 +14,7 @@ TBD
 
 ## Code
 
+**Execute project:**
 *code/run_all_Nitrate_PTB.R* describes and executes all scripts
 
 0. Configure workspace
