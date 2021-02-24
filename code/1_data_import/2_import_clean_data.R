@@ -5,9 +5,6 @@
 # water quality
   load("data/processed/clean_input/nitrate_wq_data.RData")
   
-  # pwsids
-  load("data/processed/clean_input/pws_clean.RData")
-  
 # births
   
   # study population
@@ -19,9 +16,9 @@
 # sibling sample
   
   # all siblings
-  load("data/processed/births_exposure/sibs")
+  load("data/processed/births_exposure/sibs_consecutive.RData")
 
-# 
+# end
   
   
   

@@ -2,7 +2,9 @@
 ## Nitrate in drinking water and spontaneous preterm birth
 ## Author: A. Sherris
 
-## function: clean output of model with categorical exposure
+# ------------------------------------------------------------------------------------
+
+# function: clean output of model with categorical exposure
   # input:
     # mod_object: survival or glmer model object
     # outcome: model outcome (as a string)
@@ -61,8 +63,9 @@ clean_model_output <- function(mod_object, outcome) {
     return()
 }
 
+# ----------------------------------------------------------------------------------------
 
-## function to clean output of model with continuous exposure
+# function to clean output of model with continuous exposure 
   # input and output parameters are the same as above, with the exception of the "exposure_cat" variable
   # OR is interpreted as change in odds with unit increase in concentration of nitrate
 
@@ -95,3 +98,4 @@ clean_model_output_conc <- function(mod_object, outcome) {
     return()
 }
 
+# end

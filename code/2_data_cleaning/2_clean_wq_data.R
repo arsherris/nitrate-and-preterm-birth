@@ -12,7 +12,7 @@ clean_wq_data <- function(data_wq_raw) {
   # load and clean flow paths
   
     flow_paths <- flow_paths_raw %>% 
-      rename(pwsid = NUMBER0,
+      rename(pwsid =  NUMBER0,
              sup_id = `Supply ID`,
              rec_id = `Receiving ID`
              ) %>% 
@@ -34,40 +34,19 @@ clean_wq_data <- function(data_wq_raw) {
         select(CHEMICAL, common_mdl = FINDING) %>% 
         ungroup()
       
-      # clean water quality data
-      # replace "0" value NDs with most common MDL
+    # clean water quality data
+    # replace "0" value NDs with most common MDL
+    
+    wq_data <- data_wq_raw %>% 
       
-      wq_data <- data_wq_raw %>% 
-        
-        # join with common MDL data
-        left_join(mdls, by = "CHEMICAL") %>% 
-        mutate(CHEMICAL = case_when(
-          CHEMICAL == "ARSENIC" ~ "Arsenic",
-          CHEMICAL == "NITRATE (AS NO3)" ~ "Nitrate",
-          CHEMICAL == "PERCHLORATE" ~ "Perchlorate",
-          CHEMICAL == "NITRITE (AS N)" ~ "Nitrite",
-          CHEMICAL == "URANIUM (PCI/L)" ~ "Uranium",
-          CHEMICAL == "CHROMIUM, HEXAVALENT" ~ "Chromium (VI)",
-          CHEMICAL == "GROSS ALPHA" ~ "Gross Alpha",
-          CHEMICAL == "SELENIUM" ~ "Selenium",
-          CHEMICAL == "MERCURY" ~ "Mercury",
-          CHEMICAL == "IRON" ~ "Iron",
-          CHEMICAL == "MANGANESE" ~ "Manganese",
-          CHEMICAL == "RADIUM 228" ~ "Radium228",
-          CHEMICAL == "RADIUM 226" ~ "Radium226",
-          CHEMICAL == "IRON" ~ "Iron",
-          CHEMICAL == "VANADIUM" ~ "Vanadium",
-          CHEMICAL == "CHROMIUM (TOTAL)" ~ "Chromium (Total)",
-          CHEMICAL == "1,2,3-TRICHLOROPROPANE" ~ "TCP",
-          CHEMICAL == "FLUORIDE (F) (NATURAL-SOURCE)" ~ "Fluoride",
-          CHEMICAL == "MERCURY" ~ "Mercury",
-          TRUE ~ CHEMICAL)) %>% 
-        
-        # filter to chemical of interest  
-      filter(CHEMICAL == study_exposure) %>% 
+      # rename chemical of interest
+      mutate(CHEMICAL == "Nitrate") %>% 
       
+      # join with common MDL data
+      left_join(mdls, by = "CHEMICAL") %>% 
+        
       # join with source and pws info
-      left_join(source_info, by = c("PRIM_STA_C" = "PRI_STA_C")) %>% 
+      left_join(source_status, by = c("PRIM_STA_C" = "PRI_STA_C")) %>% 
       left_join(select(pws_info, pwsid = `Water System No`,
                        county = `Principal County Served`)) %>% 
       select(pwsid, 
@@ -92,9 +71,7 @@ clean_wq_data <- function(data_wq_raw) {
              
              # remove invalid qualifiers
              xmod == "<" | is.na(xmod), 
-             !chem %in% c("FLUORIDE (TREATMENT RELATED-DISTRIBUTION)", "NITRATE + NITRITE (AS N)",
-                          "RADIUM 226 COUNTING ERROR", "RADIUM 228 COUNTING ERROR", "NITRATE (AS N)"),
-             
+            
              # remove NA findings
              !is.na(finding),
              

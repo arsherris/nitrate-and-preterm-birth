@@ -18,3 +18,4 @@ res_case_control_all_births <- bind_rows(clean_model_output(mod_case_control_ear
 
 write_output(res_case_control_all_births, "output/results/secondary/2_cohort/")
 
+# end

@@ -15,8 +15,6 @@ sibs_discordant <- sibs_consecutive %>%
                        ids_high[ids_high %in% ids_med],
                        ids_med[ids_med %in% ids_low]))
 
-save(sibs_discordant, file ="data/processed/births_exposure/sibs_discordant.RData")
-
 # run models
 
 mod_siblings_early <- clog_adj(sibs_discordant, "prem_20_to_31")
@@ -31,4 +29,4 @@ res_sibling_analysis <- bind_rows(clean_model_output(mod_siblings_early, "prem_2
 
 write_output(res_sibling_analysis, "output/results/primary/")
 
-
+# end

@@ -4,7 +4,7 @@
 
 load("data/processed/births_exposure/sibs_consecutive.RData")
 
-## continuous exposure: sibling sample
+## sibling sample -------------------------------------------------------------------------
 
   # run models
   
@@ -21,7 +21,7 @@ load("data/processed/births_exposure/sibs_consecutive.RData")
   
   write_output(res_sibs_continuous, "output/results/primary/")
 
-## continuous exposure: individual-level sample
+## individual-level sample ------------------------------------------------------------------
 
   # run models
   
@@ -38,7 +38,7 @@ load("data/processed/births_exposure/sibs_consecutive.RData")
   write_output(res_case_control_continuous, "output/results/secondary/2_cohort/")
 
 
-## continuous exposure: sibling sample without maternal movement
+## sibling sample without maternal movement --------------------------------------------------
   
   # run models
   
@@ -55,4 +55,4 @@ load("data/processed/births_exposure/sibs_consecutive.RData")
   
   write_output(res_same_pws_continuous, "output/results/secondary/1_movement/")
   
-
+# end

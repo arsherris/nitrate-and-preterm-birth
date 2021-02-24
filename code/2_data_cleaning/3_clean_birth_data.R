@@ -2,7 +2,7 @@
 ## Nitrate in drinking water and spontaneous preterm birth
 ## Author: A. Sherris
 
-# function to clean birth data
+# function: clean_births -----------------------------------------------------------------------
   # input: raw births data from state
   # output: cleaned births data
 
@@ -64,8 +64,9 @@ data_births_raw %>%
     return()
 }
 
+# function: spatial_births ------------------------------------------------------------------
 
-# function: transform data into spatial points data frame with projected CRS and find county
+# transform data into spatial points data frame with projected CRS and find county
 
 spatial_births <- function(data_births_clean) {
   
