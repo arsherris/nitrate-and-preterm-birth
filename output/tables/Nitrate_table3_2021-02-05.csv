@@ -1,0 +1,25 @@
+model,outcome,exposure_cat,n_term,n_preterm,result
+All Siblings,prem_20_to_31,Low,92042,598,Ref
+All Siblings,prem_20_to_31,Medium,82607,714,"1.47 (1.29, 1.67)"
+All Siblings,prem_20_to_31,High,5955,50,"2.52 (1.49, 4.26)"
+All Siblings,prem_20_to_31,Continuous,1385142,9050,"1.015 (1.01, 1.021)"
+Same PWS,prem_20_to_31,Low,41512,268,Ref
+Same PWS,prem_20_to_31,Medium,40615,387,"1.64 (1.37, 1.97)"
+Same PWS,prem_20_to_31,High,2677,20,"2.04 (0.83, 5.01)"
+Same PWS,prem_20_to_31,Continuous,991832,6337,"1.031 (1.021, 1.042)"
+Individual-level,prem_20_to_31,Low,3404894,25359,Ref
+Individual-level,prem_20_to_31,Medium,404732,3669,"1.49 (1.42, 1.56)"
+Individual-level,prem_20_to_31,High,22464,179,"1.34 (1.12, 1.6)"
+Individual-level,prem_20_to_31,Continuous,3832090,29207,"1.011 (1.009, 1.013)"
+All Siblings,prem_32_to_36,Low,92042,3302,Ref
+All Siblings,prem_32_to_36,Medium,82607,3093,"1.08 (1.02, 1.15)"
+All Siblings,prem_32_to_36,High,5955,196,"1.05 (0.85, 1.31)"
+All Siblings,prem_32_to_36,Continuous,1385142,49089,"1.003 (1.001, 1.006)"
+Same PWS,prem_32_to_36,Low,41512,1485,Ref
+Same PWS,prem_32_to_36,Medium,40615,1563,"1.15 (1.06, 1.25)"
+Same PWS,prem_32_to_36,High,2677,87,"1.1 (0.79, 1.54)"
+Same PWS,prem_32_to_36,Continuous,991832,34765,"1.007 (1.003, 1.011)"
+Individual-level,prem_32_to_36,Low,3404894,123240,Ref
+Individual-level,prem_32_to_36,Medium,404732,15277,"1.12 (1.09, 1.14)"
+Individual-level,prem_32_to_36,High,22464,787,"1.07 (0.97, 1.17)"
+Individual-level,prem_32_to_36,Continuous,3832090,139304,"1.003 (1.002, 1.004)"

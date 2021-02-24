@@ -1,0 +1,62 @@
+variable,value,study_pop,case_control,crossover,concordant,discordant
+NA,N,4698830,4160998,1443318,1254754,188564
+Count,count,3641407,3274933,652926,571880,81046
+Age,20,9.7,10,8.7,8.5,9.6
+Age,20-24,23,24,24,24,27
+Age,25-29,27,27,28,28,30
+Age,30-34,24,24,25,25,23
+Age,35,16,15,14,14,11
+Age,NA,0.0043,0.0043,0.0026,0.0024,0.0037
+Race/ethnicity,1 Hispanic,50,52,42,41,48
+Race/ethnicity,2 White,29,27,35,36,31
+Race/ethnicity,3 Asian,12,12,13,13,12
+Race/ethnicity,4 Black,5.6,5.9,6.8,6.9,5.9
+Race/ethnicity,5 Other,2.2,2.1,2,2,1.8
+Race/ethnicity,NA,1.3,1.1,1.2,1.2,0.96
+Education,1 Less than high school,27,28,18,17,19
+Education,2 High school,27,27,28,28,30
+Education,3 More than high school,44,43,52,52,49
+Education,NA,2.6,2.4,2.1,2.1,1.8
+Payer,1 Medi-Cal,46,48,37,37,41
+Payer,2 Private,50,48,59,59,56
+Payer,3 Other,2,1.8,1.1,1.1,1.1
+Payer,4 Uninsured,2,2.1,2.5,2.5,2.3
+Payer,NA,0.18,0.18,0.17,0.15,0.25
+Prenatal care,1 Yes,94,94,95,95,95
+Prenatal care,2 No,4.6,4.6,3.9,3.8,4.3
+Prenatal care,NA,1.2,1.2,1.1,1.1,1.1
+Parity,1,39,39,31,31,29
+Parity,2,32,32,40,40,38
+Parity,3,28,29,29,29,33
+Infant sex,Female,51,51,51,51,51
+Infant sex,Male,49,49,49,49,49
+Infant sex,NA,0.00062,0.0007,0.00048,0.00056,NA
+Year,2000,7.8,7.7,5.9,5.8,6.3
+Year,2001,7.7,7.6,6.1,6.1,6.5
+Year,2002,7.7,7.6,7.2,7.1,7.7
+Year,2003,7.9,7.8,8.2,8.2,8.3
+Year,2004,7.9,7.8,8.8,8.7,9
+Year,2005,8.2,8.2,9.5,9.5,9.1
+Year,2006,8.5,8.5,9.9,9.9,9.8
+Year,2007,9.4,9.5,11,11,10
+Year,2008,9.3,9.3,10,10,9.9
+Year,2009,8.8,8.9,9,9,8.8
+Year,2010,8.5,8.6,7.6,7.6,7.4
+Year,2011,8.3,8.4,7.2,7.3,6.9
+Month,1,9,9,8.9,9,8.6
+Month,2,7.6,7.6,7.5,7.5,7.1
+Month,3,8.6,8.6,8.4,8.4,8.4
+Month,4,7.9,7.9,7.7,7.7,7.9
+Month,5,8.3,8.3,8.2,8.2,8.2
+Month,6,8,7.9,8,8,7.9
+Month,7,8.2,8.2,8.3,8.4,8.3
+Month,8,8.2,8.1,8.3,8.3,8.6
+Month,9,8.1,8.1,8.3,8.2,8.6
+Month,10,8.6,8.6,8.7,8.7,8.9
+Month,11,8.6,8.6,8.6,8.6,8.7
+Month,12,9.1,9.1,9.1,9.1,8.7
+Region,1. Northern,7.8,7.7,9.4,10,2.8
+Region,2. Bay Area,20,18,17,18,13
+Region,3. SJV,12,12,14,14,17
+Region,4. LA,32,34,31,31,31
+Region,5. Inland Empire,28,27,28,26,36

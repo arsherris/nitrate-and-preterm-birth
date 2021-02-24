@@ -1,0 +1,13 @@
+prem_3cat,low,medium,high,total,sample
+1 Early,27008,3886,196,31090,Case-control
+2 Near-term,129222,16013,824,146059,Case-control
+3 Term,3540140,420674,23035,3983849,Case-control
+1 Early,7789,1199,64,9052,All siblings
+2 Near-term,43303,5515,272,49090,All siblings
+3 Term,1226196,150628,8352,1385176,All siblings
+1 Early,7191,484,14,7689,Concordant siblings
+2 Near-term,40001,2422,76,42499,Concordant siblings
+3 Term,1134150,68020,2396,1204566,Concordant siblings
+1 Early,598,715,50,1363,Discordant siblings
+2 Near-term,3302,3093,196,6591,Discordant siblings
+3 Term,92046,82608,5956,180610,Discordant siblings
