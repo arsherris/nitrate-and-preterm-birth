@@ -5,26 +5,20 @@
  **Currently in review / draft form**  
  Contact asherris@stanford.edu with questions and for details on data access 
 
-Data:
+## Project summary 
+ Estimate tap water during pregnancy for California sibling births, 2000-2011, and define associations between nitrate in drinking water and risk of preterm birth using a within-mother design and conditional logistic regression. Code is customizable to other contaminants and outcomes of interest. 
 
-  # Project summary: 
-    # Estimate tap water during pregnancy for California sibling births, 2000-2011, and
-    # define associations between nitrate in drinking water and risk of preterm birth
-    # using a within-mother design and conditional logistic regression.
-    # Code is customizable to other contaminants and outcomes of interest. 
+## Data sources
 
-### Configure: loads libraries and universal objects and functions
+## Code
 
-  code/0_config.R
+*code/0_config.R* loads libraries and universal objects and functions
 
-### 1. Import data 
+1. Import data
+*code/1_data_import/1_import_raw_data.R* Imports data  
+2. Clean data
+2.1 *code/2_data_cleaning/1_clean_pws_data.R* Loads functions to clean public water system data
   
-  code/1_data_import/1_import_raw_data.R  
-    
-### 2. Clean data
-
-  ## 2.1 Load functions to clean public water system data
-     code/2_data_cleaning/1_clean_pws_data.R
   
   ## 2.2 Load functions to clean water quality data
      code/2_data_cleaning/2_clean_wq_data.R
