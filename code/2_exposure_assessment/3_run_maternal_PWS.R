@@ -3,13 +3,7 @@
 ## Author: A. Sherris
 
 # load functions
-  source("code/3_exposure_assessment/1_assign_maternal_PWS.R")
-  
-# load clean PWS data
-  load("data/processed/clean_input/pws_clean.RData")
-
-# load study population
-  load("data/processed/clean_input/births_study_pop_sp.RData")
+  source("code/2_exposure_assessment/1_assign_maternal_PWS.R")
   
 ### assign maternal public water system to births based on WBT boundaries
 
@@ -74,9 +68,6 @@
     select(-pwsid_buff)
   
 # save data
-  
-  save(births_study_pop_in_pws_boundary, births_study_pop_in_pws_buffer,
-       file = "data/processed/2_maternal_pwsid/birth_remainder_pws_intermediate.RData")
   
   save(births_study_pop_pws_final,
        file = "data/processed/2_maternal_pwsid/births_study_pop_pws_final.RData")

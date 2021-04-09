@@ -3,7 +3,7 @@
 ## Author: A. Sherris
 
 source("code/0_config.R")
-source("code/5_visualization/1_manuscript/0_Table_fxns.R")
+source("code/4_visualization/1_manuscript/0_Table_fxns.R")
 
 # load datasets to be summarised in Table 1
   

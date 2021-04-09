@@ -2,7 +2,12 @@
 ## Nitrate in drinking water and spontaneous preterm birth
 ## Author: A. Sherris
 
+source("code/0_config.R")
+source("code/3_analysis/1_define_model_fxns/1_clogit_fxns.R")
+source("code/3_analysis/1_define_model_fxns/3_results_table_fxns.R")
+
 load("data/processed/births_exposure/sibs_consecutive.RData")
+
 
 # find exposure-discordant siblings in crossover sample
 
@@ -19,8 +24,6 @@ sibs_discordant <- sibs_consecutive %>%
 
 mod_siblings_early <- clog_adj(sibs_discordant, "prem_20_to_31")
 mod_siblings_late  <- clog_adj(sibs_discordant, "prem_32_to_36")
-
-save(mod_siblings_early, mod_siblings_late, file = "output/results/primary/sibling_models.RData")
 
 # generate results table
 

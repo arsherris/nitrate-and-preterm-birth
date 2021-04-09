@@ -2,14 +2,16 @@
 ## Nitrate in drinking water and spontaneous preterm birth
 ## Author: A. Sherris
 
+source("code/0_config.R")
+source("code/3_analysis/1_define_model_fxns/2_glmer_fxns.R")
+source("code/3_analysis/1_define_model_fxns/3_results_table_fxns.R")
+
 load("data/processed/births_exposure/births_case_control.RData")
 
 # run models
 
 mod_case_control_early <- glmer_case_control_adj(births_case_control, "prem_20_to_31")
 mod_case_control_late <- glmer_case_control_adj(births_case_control, "prem_32_to_36")
-
-save(mod_case_control_early, mod_case_control_late, "output/results/secondary/2_cohort/cohort_mods.RData")
 
 # generate results table
 

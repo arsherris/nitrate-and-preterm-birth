@@ -9,7 +9,7 @@
 
 # load functions
 
-source("code/3_exposure_assessment/2_assign_gestational_exposure_no_dist.R")
+source("code/2_exposure_assessment/2_assign_gestational_exposure_no_dist.R")
 
 # load data
 
