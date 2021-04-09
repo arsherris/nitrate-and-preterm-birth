@@ -22,20 +22,20 @@ Contact Allison Sherris, asherris@stanford.edu, for details and code to produce 
 
 ## Code
 
-**Execute project:**
-*code/run_all_Nitrate_PTB.R* describes and executes all scripts
+**Execute project:**  
+*code/run_all_Nitrate_PTB.R* - describes and executes all scripts
 
-**Individual scripts:**
+**Individual scripts:**  
 0. Configure workspace
-* *code/0_config.R* loads libraries and universal objects and functions
+* *code/0_config.R* - loads libraries and universal objects and functions
 
 1. Import data  
-* *code/1_data_import/1_import_raw_data.R* Imports data    
+* *code/1_data_import/1_import_data.R* - Imports cleaned data    
 
 2. Exposure assessment 
-* *code/2_exposure_assessment/1_assign_maternal_PWS.R*   Loads functions to link births to public water systems based on maternal residence
-* *code/2_exposure_assessment/2_assign_gestational_exposure.R* Loads functions to assign gestational water quality based on public water systems
-* *code/2_exposure_assessment/3_Runs_maternal_PWS.R* Runs functions to link births to public water systems 
+* *code/2_exposure_assessment/1_assign_maternal_PWS.R* - Loads functions to link births to public water systems based on maternal residence
+* *code/2_exposure_assessment/2_assign_gestational_exposure.R* - Loads functions to assign gestational water quality based on public water systems
+* *code/2_exposure_assessment/3_Runs_maternal_PWS.R* - Runs functions to link births to public water systems 
 * *code/2_exposure_assessment/4_Runs_gestational_exposure.R* Runs functions to assign gestational water quality 
 
 3. Analysis  
