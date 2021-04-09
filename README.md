@@ -8,7 +8,7 @@ A retrospective within-mother analysis
  For comments, questions, concerns regarding code: Allison Sherris, asherris@stanford.edu
 
 ## Project summary 
- Estimate tap water during pregnancy for California sibling births, 2000-2011, and define associations between nitrate in drinking water and risk of preterm birth using a within-mother design and conditional logistic regression. Code is customizable to other contaminants and outcomes of interest. 
+This study estimated exposure to nitrate in tap water during pregnancy for a large cohort of California births from 2000-2011. The primary analysis uses a within-mother design to evaluate associations with nitrate in drinking water and odds of spontaneous preterm preterm. Code is customizable to other contaminants and outcomes of interest. 
 
 ## Data sources
 **Nitrate monitoring records for public water systems**: State Water Resources Control Board, EDT Library and Water Quality Analyses Data and Download Page. <https://www.waterboards.ca.gov/drinking_water/certlic/drinkingwater/EDTlibrary.html> Downloaded November 22, 2019.
