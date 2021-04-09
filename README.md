@@ -2,7 +2,8 @@
 ##  Gestational exposure to nitrate in drinking water and preterm birth:  A retrospective within-mother analysis
 
  Authors: Allison R Sherris, Mike Baiocchi, Scott Fendorf, Steve Luby, Wei Yang, Gary Shaw  
- **Currently in press at Environmental Health Perspectives**  
+ **Currently in press at Environmental Health Perspectives** 
+ doi:10.1289/EHP8205 
  
  For comments, questions, concerns regarding code: Allison Sherris, asherris@stanford.edu
 
@@ -36,18 +37,18 @@ Contact Allison Sherris, asherris@stanford.edu, for details and code to produce 
 * *code/2_exposure_assessment/1_assign_maternal_PWS.R* - Loads functions to link births to public water systems based on maternal residence
 * *code/2_exposure_assessment/2_assign_gestational_exposure.R* - Loads functions to assign gestational water quality based on public water systems
 * *code/2_exposure_assessment/3_Runs_maternal_PWS.R* - Runs functions to link births to public water systems 
-* *code/2_exposure_assessment/4_Runs_gestational_exposure.R* Runs functions to assign gestational water quality 
+* *code/2_exposure_assessment/4_Runs_gestational_exposure.R* - Runs functions to assign gestational water quality 
 
 3. Analysis  
 3.1 Functions to run models and generate results tables   
-* *code/3_analysis/1_define_model_fxns/1_clogit_fxns.R* Functions for conditional logistic regression models for sibling analysis
-* *code/3_analysis/1_define_model_fxns/2_glmer_fxns.R* Functions for mixed models for individual-level analysis
-* *code/3_analysis/1_define_model_fxns/3_results_table_fxns.R* Functions to clean model output and generate results tables  
+* *code/3_analysis/1_define_model_fxns/1_clogit_fxns.R* - Functions for conditional logistic regression models for sibling analysis
+* *code/3_analysis/1_define_model_fxns/2_glmer_fxns.R* - Functions for mixed models for individual-level analysis
+* *code/3_analysis/1_define_model_fxns/3_results_table_fxns.R* - Functions to clean model output and generate results tables  
 3.2 Prepare data for analysis  
-* *code/3_analysis/2_prep_data_for_analysis/1_individual_sample.R* Generates sample for individual-level analysis  
-* *code/3_analysis/2_prep_data_for_analysis/2_sibling_sample.R* Generates sample for sibling analysis  
+* *code/3_analysis/2_prep_data_for_analysis/1_individual_sample.R* - Generates sample for individual-level analysis  
+* *code/3_analysis/2_prep_data_for_analysis/2_sibling_sample.R* - Generates sample for sibling analysis  
 3.3 Primary analysis  
-* *code/3_analysis/3_primary_analysis/sibling_analysis.R* Runs sibling-matched analysis  
+* *code/3_analysis/3_primary_analysis/sibling_analysis.R* - Runs sibling-matched analysis  
 3.4 Secondary analyses  
 * *code/3_analysis/4_secondary_analysis/1_siblings_same_pws.R* Secondary sibling-matched analysis: siblings within the same water system  
 * *code/3_analysis/4_secondary_analysis/2_case_control.R* Secondary individual-level (case-control) analysis  
