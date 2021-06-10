@@ -1,9 +1,8 @@
 # nitrate-and-preterm-birth
-##  Gestational exposure to nitrate in drinking water and preterm birth:  A retrospective within-mother analysis
-
- Authors: Allison R Sherris, Mike Baiocchi, Scott Fendorf, Steve Luby, Wei Yang, Gary Shaw  
- **Currently in press at Environmental Health Perspectives, April 2021**   
- doi:10.1289/EHP8205 
+##  Gestational exposure to nitrate in drinking water and preterm birth:  A retrospective within-mother analysis. (2021.)
+ Allison R Sherris, Mike Baiocchi, Scott Fendorf, Steve Luby, Wei Yang, Gary Shaw 
+ Environmental Health Perspectives, Vol. 129, No. 5
+ https://doi.org/10.1289/EHP8205
  
  For comments, questions, concerns regarding code: Allison Sherris, asherris@stanford.edu
 
